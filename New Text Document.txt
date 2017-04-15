@@ -1,0 +1,54 @@
+create database grade;
+use grade;
+create table student(
+	sid varchar(32),
+	sname varchar(32),
+	sage int,
+	ssex varchar(32),
+	sclass varchar(32),
+	sdept varchar(32),
+	saddr varchar(64)
+);
+create table sc(
+	sid varchar(32),
+	cid varchar(32),
+	score int
+);
+
+insert into student values('001', '张三', 19, '男', '10001', '03', '上海野生动物园');
+insert into student values('002', '张刘', 20, '女', '10001', '04', 'department store');
+insert into student values('003', '李四', 22, '男', '10001', '03', '李家沟');
+insert into student values('004', '王五', 19, '女', '10001', '04', '哈工大');
+insert into student values('005', '此号作废', 19, '男', '10001', '03', '张家沟');
+insert into student values('006', '此号已被封丶', 19, '男', '10001', '04', 'department store');
+insert into student values('007', '情霸', 29, '男', '10002', '03', '朝鲜');
+insert into student values('008', '学霸', 25, '女', '10001', '04', '镇江三山风景名胜区');
+insert into student values('009', '侠霸', 28, '女', '10002', '03', '朝鲜');
+insert into student values('010', '吴亦凡', 17, '男', '10002', '04', '苏州吴江同里古镇景区');
+insert into student values('011', '邓紫棋', 24, '男', '10002', '03', '金星');
+insert into student values('012', '周星驰', 44, '女', '10002', '04', '张家沟');
+insert into student values('013', '北川景子', 31, '男', '10001', '03', '金星');
+insert into student values('014', '孙红雷', 42, '男', '10002', '04', '无锡灵山大佛景区');
+insert into student values('015', '吴秀波', 99, '女', '10002', '03', '南通濠河风景区');
+
+insert into sc values('001', '001', 43);
+insert into sc values('001', '002', 66);
+insert into sc values('001', '003', 88);
+insert into sc values('002', '001', 80);
+insert into sc values('002', '002', 85);
+insert into sc values('002', '003', 83);
+insert into sc values('003', '001', 90);
+insert into sc values('003', '002', 66);
+insert into sc values('003', '003', 88);
+insert into sc values('004', '001', 21);
+insert into sc values('005', '002', 60);
+insert into sc values('006', '003', 73);
+insert into sc values('007', '001', 82);
+insert into sc values('008', '002', 49);
+insert into sc values('009', '003', 67);
+insert into sc values('010', '001', 77);
+insert into sc values('011', '002', 65);
+insert into sc values('012', '003', 67);
+insert into sc values('013', '001', 90);
+insert into sc values('014', '002', 92);
+insert into sc values('015', '003', 93);
